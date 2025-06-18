@@ -1,33 +1,3 @@
-# Simple Reverse Text
-
-文字列を逆さまにする簡単なJavaScriptツールです。
-
-## インストール方法
-
-```bash
-npm install simple-reverse-text
-```
-
-## 使い方
-
-```javascript
-const reverseText = require('simple-reverse-text');
-
-// 文字列を逆さまにする
-console.log(reverseText('hello')); // => 'olleh'
-console.log(reverseText('こんにちは')); // => 'はちにんこ'
-```
-
-## テスト
-
-```bash
-npm test
-```
-
-## ライセンス
-
-MITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルを参照してください。
-
 # Writing Recipe Checker
 
 日本語文章を「ライティングレシピ」に沿って自動チェックし、観点ごとに指摘を出すOSSツールです。
@@ -35,7 +5,9 @@ MITライセンスの下で公開されています。詳細は[LICENSE](LICENSE
 ## インストール方法
 
 ```bash
-npm install writing-recipe-checker
+git clone https://github.com/ShimpeiARK/simple-reverse-text.git
+cd simple-reverse-text
+npm install
 ```
 
 ## 使い方
