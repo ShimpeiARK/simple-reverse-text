@@ -1,0 +1,12 @@
+{
+  "name": "simple-reverse-text",
+  "version": "1.0.0",
+  "description": "文字列を逆さまにする簡単なツール",
+  "main": "src/reverse.js",
+  "scripts": {
+    "test": "node test/reverse.test.js"
+  },
+  "keywords": ["string", "reverse", "utility"],
+  "author": "",
+  "license": "MIT"
+} 
