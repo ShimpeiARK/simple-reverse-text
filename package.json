@@ -1,12 +1,30 @@
 {
-  "name": "simple-reverse-text",
+  "name": "uxwriting-recipe",
   "version": "1.0.0",
-  "description": "文字列を逆さまにする簡単なツール",
-  "main": "src/reverse.js",
+  "description": "UXライティングチェックツール with Claude API",
+  "main": "index.js",
   "scripts": {
-    "test": "node test/reverse.test.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "test:security": "npm audit --audit-level=moderate",
+    "check": "node src/main.js",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:fix": "npm audit fix"
   },
-  "keywords": ["string", "reverse", "utility"],
-  "author": "",
-  "license": "MIT"
+  "keywords": ["ux", "writing", "claude", "api", "security"],
+  "author": "Claude Security Team",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.11.0",
+    "express": "^4.21.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0",
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
 } 
